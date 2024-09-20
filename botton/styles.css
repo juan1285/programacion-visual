@@ -1,0 +1,112 @@
+.jacques-francois-shadow-regular {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.areaDeBotones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  
+}
+/* vamos agregar color,estilos de letras y distribucion */
+button{
+    margin: 20px; /* margen entre elementos */
+    width: 200px; /* ancho del botón */
+    height: 100px; /* alto del botón */
+    font-size: xx-large; /* tamaño de la fuente */
+    background-color: beige; /* color de fondo */
+    border: none; /* quitar el borde */
+    border-radius: 15px; /* curva de los bordes */
+    cursor: pointer; /* cursor de puntero en hover */
+    display: inline-block;   /* Hace que el botón se comporte como un elemento en línea con un tamaño de bloque */
+    padding: 15px 25px; /* Define el espacio interno del botón (15px arriba y abajo, 25px a los lados) */
+    cursor: pointer;/* Cambia el cursor a un puntero (mano) cuando se pasa el ratón por encima */
+    color: #fff;  /* Establece el color del texto en blanco (#fff) */
+    background-color: #04AA6D;/* Establece el color de fondo del botón (#04AA6D, verde) */
+    border: none; /* Elimina el borde alrededor del botón */
+    box-shadow: 0 9px #999;/* Aplica una sombra al botón (9px de sombra vertical hacia abajo con color #999) */
+  }
+  button:hover {background-color: #3e8e41}
+
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+/* estilos para celulares con media queries */
+@media only screen and (max-width: 600px){
+    .areaDeBotones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    /* vamos agregar color,estilos de letras y distribucion */
+    button{
+        margin: 20px; /* margen entre elementos */
+        width: 200px; /* ancho del botón */
+        height: 100px; /* alto del botón */
+        font-size: xx-large; /* tamaño de la fuente */
+        background-color: beige; /* color de fondo */
+        border: none; /* quitar el borde */
+        border-radius: 15px; /* curva de los bordes */
+        cursor: pointer; /* cursor de puntero en hover */
+        display: inline-block;   /* Hace que el botón se comporte como un elemento en línea con un tamaño de bloque */
+        padding: 15px 25px; /* Define el espacio interno del botón (15px arriba y abajo, 25px a los lados) */
+        cursor: pointer;/* Cambia el cursor a un puntero (mano) cuando se pasa el ratón por encima */
+        color: #fff;  /* Establece el color del texto en blanco (#fff) */
+        background-color: #04AA6D;/* Establece el color de fondo del botón (#04AA6D, verde) */
+        border: none; /* Elimina el borde alrededor del botón */
+        box-shadow: 0 9px #999;/* Aplica una sombra al botón (9px de sombra vertical hacia abajo con color #999) */
+      }
+      button:hover {background-color: #3e8e41}
+    
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }  
+}
+/* estilos para tableta con media queries */
+@media only screen and (max-width: 900px){
+    .areaDeBotones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    /* vamos agregar color,estilos de letras y distribucion */
+    button{
+        margin: 20px; /* margen entre elementos */
+        width: 200px; /* ancho del botón */
+        height: 100px; /* alto del botón */
+        font-size: xx-large; /* tamaño de la fuente */
+        background-color: beige; /* color de fondo */
+        border: none; /* quitar el borde */
+        border-radius: 15px; /* curva de los bordes */
+        cursor: pointer; /* cursor de puntero en hover */
+        display: inline-block;   /* Hace que el botón se comporte como un elemento en línea con un tamaño de bloque */
+        padding: 15px 25px; /* Define el espacio interno del botón (15px arriba y abajo, 25px a los lados) */
+        cursor: pointer;/* Cambia el cursor a un puntero (mano) cuando se pasa el ratón por encima */
+        color: #fff;  /* Establece el color del texto en blanco (#fff) */
+        background-color: #04AA6D;/* Establece el color de fondo del botón (#04AA6D, verde) */
+        border: none; /* Elimina el borde alrededor del botón */
+        box-shadow: 0 9px #999;/* Aplica una sombra al botón (9px de sombra vertical hacia abajo con color #999) */
+      }
+      button:hover {background-color: #3e8e41}
+    
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }  
+
+}
