@@ -1,3 +1,48 @@
+/* barra de navegacion */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  font-family: 'Jacques Francois Shadow', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Ocultamos el ícono de hamburguesa en pantallas grandes */
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+/* barra de navegacion */
+
 .jacques-francois-shadow-regular {
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
@@ -39,43 +84,79 @@ button{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-/* estilos para celulares con media queries */
-@media only screen and (max-width: 600px){
-    .areaDeBotones{
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .areaDeBotones {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 70vh;
     }
-    /* vamos agregar color,estilos de letras y distribucion */
-    button{
-        margin: 20px; /* margen entre elementos */
-        width: 200px; /* ancho del botón */
-        height: 100px; /* alto del botón */
-        font-size: xx-large; /* tamaño de la fuente */
-        background-color: beige; /* color de fondo */
-        border: none; /* quitar el borde */
-        border-radius: 15px; /* curva de los bordes */
-        cursor: pointer; /* cursor de puntero en hover */
-        display: inline-block;   /* Hace que el botón se comporte como un elemento en línea con un tamaño de bloque */
-        padding: 15px 25px; /* Define el espacio interno del botón (15px arriba y abajo, 25px a los lados) */
-        cursor: pointer;/* Cambia el cursor a un puntero (mano) cuando se pasa el ratón por encima */
-        color: #fff;  /* Establece el color del texto en blanco (#fff) */
-        background-color: #04AA6D;/* Establece el color de fondo del botón (#04AA6D, verde) */
-        border: none; /* Elimina el borde alrededor del botón */
-        box-shadow: 0 9px #999;/* Aplica una sombra al botón (9px de sombra vertical hacia abajo con color #999) */
-      }
-      button:hover {background-color: #3e8e41}
-    
-      button:active {
+
+    button {
+        margin: 10px; /* Reducir márgenes */
+        width: 80%; /* Ancho adaptable según el tamaño de la pantalla */
+        height: 80px; /* Reducir la altura para pantallas pequeñas */
+        font-size: large; /* Ajustar el tamaño de la fuente */
+        background-color: beige;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 10px 20px; /* Ajustar el padding */
+        color: #fff;
+        background-color: #04AA6D;
+        box-shadow: 0 6px #999; /* Ajustar sombra */
+    }
+
+    button:hover {
         background-color: #3e8e41;
-        box-shadow: 0 5px #666;
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 4px #666;
         transform: translateY(4px);
-    }  
+    }
 }
+
 /* estilos para tableta con media queries */
 @media only screen and (max-width: 900px){
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.menu-toggle {
+    display: block;
+}
     .areaDeBotones{
         display: flex;
         flex-direction: column;
@@ -109,4 +190,4 @@ button{
         transform: translateY(4px);
     }  
 
-}
+  }

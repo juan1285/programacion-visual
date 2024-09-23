@@ -27,6 +27,11 @@ const saludar3 = () =>{
         }
       });
 }
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
 
 // llamado de la funciones
  
